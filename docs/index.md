@@ -14,7 +14,7 @@ features: # 可选的
     imgUrl: /img/web.png # 可选
   - title: 框架
     details: Vue框架等前端技术
-    link: /ui/
+    link: /frame/
     imgUrl: /img/ui.png
   - title: 技术
     details: 技术文档、教程、技巧、总结等文章
