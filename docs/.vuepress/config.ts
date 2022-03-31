@@ -202,6 +202,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 自定义hmtl(广告)模块
     // htmlModules
+    // 站点配置（首页 & 文章页）
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
@@ -214,8 +215,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,css3,html5,Node,git,github,markdown',
       },
     ],
+    ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
     // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+    ['meta', {name: "baidu-site-verification", content: "code-1z5Ut8ufD8"}], // 百度统计的站长验证
+    ['script', {
+      "language": "javascript",
+      "type": "text/javascript",
+      "src": "/js/baiduZhanzhang.js"
+    }], // 百度站长数据统计js代码插入
     // [
     //   'script',
     //   {
@@ -278,7 +286,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         showInMobile: false, // whether to display on the mobile side, default: false.
       },
     ],
-
+    // [require('./plugins/vuepress-plugin-code-copy')],
     [
       'demo-block', // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
       {
@@ -330,37 +338,37 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     ['vuepress-plugin-nprogress'],
-    [
-      "music-bar",
-      {
-        //手动添加歌曲,支持 URLs 或 base64 data URIs ,默认为空
-        //Add songs manually, support URLs or base64 data URIs, empty by default
-        playList: [""],
+    // [
+    //   "musicbar-player",
+    //   {
+    //     //手动添加歌曲,支持 URLs 或 base64 data URIs ,默认为空
+    //     //Add songs manually, support URLs or base64 data URIs, empty by default
+    //     // playList: [""],
 
-        platform: [
-          //目前仅支持网易云 TODO:多平台支持,默认为空数组
-          //Currently only supports Netease Cloud Music,
-          //the default is an empty array TODO: Multi-platform support,
-          {
-            name: "music.163.com",
-            songIDs:[],//支持多个歌曲 ID  //Support multiple song IDs
-            playListIDs: ["512203738"] //支持多个歌单 ID  //Support multiple playlist IDs
-          }
-        ],
+    //     platform: [
+    //       //目前仅支持网易云 TODO:多平台支持,默认为空数组
+    //       //Currently only supports Netease Cloud Music,
+    //       //the default is an empty array TODO: Multi-platform support,
+    //       {
+    //         name: "music.163.com",
+    //         songIDs:[208891],//支持多个歌曲 ID  //Support multiple song IDs
+    //         playListIDs: ["5122037"] //支持多个歌单 ID  //Support multiple playlist IDs
+    //       }
+    //     ],
 
-        timeOut: 2000, //加载超时,单位毫秒,默认2000  //Load timeout in milliseconds, default 2000
+    //     timeOut: 2000, //加载超时,单位毫秒,默认2000  //Load timeout in milliseconds, default 2000
 
-        firstClickPlay: true //首次点击自动播放,对移动端友好  //The first click autoplay, mobile friendly
+    //     firstClickPlay: true //首次点击自动播放,对移动端友好  //The first click autoplay, mobile friendly
 
-        //debugMode: <Boolean> Development mode, if in the dev environment,
-        //                     output log to console, enabled by default
+    //     //debugMode: <Boolean> Development mode, if in the dev environment,
+    //     //                     output log to console, enabled by default
 
-        //background: <String> //主容器样式  //Main container style
-        //                       default: "linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%)"
+    //     //background: <String> //主容器样式  //Main container style
+    //     //                       default: "linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%)"
 
-        //frameColor: <String> default: $accentColor
-      }
-    ]
+    //     //frameColor: <String> default: $accentColor
+    //   }
+    // ]
   ],
 
   markdown: {
@@ -372,5 +380,5 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   extraWatchFiles: [
     '.vuepress/config.ts',
     '.vuepress/config/htmlModules.ts',
-  ]
+  ],
 })
