@@ -17,14 +17,14 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:simonzhangs/simonzhangs.github.io.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://simonzhangs:${GITHUB_TOKEN}@github.com/simonzhangs/simonzhangs.git
+  githubUrl=https://simonzhangs:${GITHUB_TOKEN}@github.com/simonzhangs/simonzhangs.github.io.git
   git config --global user.name "simonzhangs"
   git config --global user.email "2863389578@qq.com"
 fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl master  # 推送到github 主分支
+git push -f $githubUrl main  # 推送到github 主分支
 # git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 
 # deploy to coding pages
