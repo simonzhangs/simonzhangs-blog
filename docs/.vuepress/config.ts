@@ -338,6 +338,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     ['vuepress-plugin-nprogress'],
+    ['vuepress-plugin-immersive-music-player']
     // [
     //   "musicbar-player",
     //   {
