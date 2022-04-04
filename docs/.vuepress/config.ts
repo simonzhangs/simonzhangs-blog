@@ -382,4 +382,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     '.vuepress/config.ts',
     '.vuepress/config/htmlModules.ts',
   ],
+
+  chainWebpack: (config) => {
+    // config 是 ChainableConfig 的一个实例
+    // config.plugin('vuepress-plugin-immersive-music-player').use({
+    //   test: /\.vue?$/,
+    //   exclude: /node_modules\/(?!vue-slider-component)/,
+    //   loader: 'vue-loader'
+    // })
+  }
+  
 })
