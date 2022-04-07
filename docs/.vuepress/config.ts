@@ -338,7 +338,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     ['vuepress-plugin-nprogress'],
-    ['vuepress-plugin-immersive-music-player']
+    ['vuepress-plugin-immersive-music-player', {
+      sliderStyle:{theme: 'isMario'},
+      playListID: 633015043,
+    }]
     // [
     //   "musicbar-player",
     //   {
