@@ -17,7 +17,7 @@ githubUrl=git@github.com:simonzhangs/simonzhangs.github.io.git
 
 git init
 git add -A
-git commit -m "add:plugin-test"
+git commit -m "ploy"
 git push -f $githubUrl master  # 推送到github 主分支
 # git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 
