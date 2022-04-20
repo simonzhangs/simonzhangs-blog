@@ -105,4 +105,8 @@ module.exports = [
     },
   ],
   ["vuepress-plugin-nprogress"],
+  ['vuepress-plugin-immersive-music-player',{
+    sliderStyle:{theme: 'isSpitRainbow'},
+    playListID: 633015043,
+  }],
 ];

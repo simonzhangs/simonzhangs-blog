@@ -10,7 +10,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # 部署到自定义域域名
-# echo 'simonzhangs.github.io' > CNAME
+echo 'songbenblog.com' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
