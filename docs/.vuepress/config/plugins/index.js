@@ -1,5 +1,6 @@
 const dayjs = require("dayjs");
 const baiduCode = require("./baiduCode"); // 百度统计hm码
+// const { nprogressPlugin } = require('@vuepress/plugin-nprogress');
 
 module.exports = [
   "vuepress-plugin-baidu-autopush", // 百度自动推送
@@ -104,9 +105,21 @@ module.exports = [
       },
     },
   ],
-  ["vuepress-plugin-nprogress"],
+  "@vuepress/plugin-nprogress",
   [require('../../plugins/vuepress-plugin-immersive-music-player'),{
-    sliderStyle:{theme: 'isSpitRainbow'},
+    sliderStyle:'isMario',
     playListID: 633015043,
   }],
+  ['cursor-effects'],
+  [
+    'dynamic-title',
+    {
+      //  showIcon: '/favicon.ico',
+       showText: '(/≧▽≦/)咦！欢迎回来！',
+      //  hideIcon: '/favicon.ico',
+       hideText: '(●—●)喔哟，别走啊！',
+       recoverTime: 1000,
+    },
+  ],
+  ['go-top']
 ];

@@ -130,12 +130,12 @@ module.exports = {
     // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
     ["meta", { name: "baidu-site-verification", content: "code-1z5Ut8ufD8" }], // 百度统计的站长验证
+    ["meta", { name: "baidu_union_verify", content: "c6a4aea9309aa9d3f34a9305150ccf4f"}], // 百度联盟的站长验证
     // 网站关联Google AdSense 与 html格式广告支持
     [
       "script",
       {
-        "data-ad-client": "ca-pub-1123091805279475",
-        async: "async",
+        async: true,
         crossorigin: "anonymous",
         src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1123091805279475",
       },
