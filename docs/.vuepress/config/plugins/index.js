@@ -1,6 +1,5 @@
 const dayjs = require("dayjs");
 const baiduCode = require("./baiduCode"); // 百度统计hm码
-// const { nprogressPlugin } = require('@vuepress/plugin-nprogress');
 
 module.exports = [
   "vuepress-plugin-baidu-autopush", // 百度自动推送
