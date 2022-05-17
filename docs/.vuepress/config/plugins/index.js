@@ -105,7 +105,11 @@ module.exports = [
     },
   ],
   "@vuepress/plugin-nprogress",
-  [require('../../plugins/vuepress-plugin-immersive-music-player'),{
+  // [require('../../plugins/vuepress-plugin-immersive-music-player'),{
+  //   sliderStyle:'isMario',
+  //   playListID: 633015043,
+  // }],
+  ['vuepress-plugin-immersive-music-player',{
     sliderStyle:'isMario',
     playListID: 633015043,
   }],
