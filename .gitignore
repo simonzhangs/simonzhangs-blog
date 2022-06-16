@@ -11,6 +11,10 @@ yarn.lock
 # vuepress
 docs/.vuepress/dist
 
+# vuepress/plguins
+docs/.vuepress/plugins/vuepress-plugin-code-copy
+docs/.vuepress/plugins/vuepress-plugin-immersive-music-player
+
 # 百度链接推送
 urls.txt
 
