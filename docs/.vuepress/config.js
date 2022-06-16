@@ -148,5 +148,11 @@ module.exports = {
   markdown: {
     lineNumbers: true,
     extractHeaders: ["h2", "h3", "h4", "h5", "h6"], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+    // extendMarkdown: md => {
+    //   md.use(function(md) {
+    //     const fence = md.render.rules.fence;
+    //     md.render.rules.fence
+    //   })
+    // },
   },
 };
